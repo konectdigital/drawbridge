@@ -1,0 +1,15 @@
+port: 8080
+
+apis:
+  reqres:
+      name: "JSONPlaceholder"
+      prefix: "typicode"
+      upstream_url: "http://jsonplaceholder.typicode.com"
+      plugins:
+        - name: retry
+          enabled: true
+          config:
+            attempts: 3
+            predicate: statusCode == 0 || statusCode >= 500
+            backoff_strategy: exponential
+            retry_methods: ["GET", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS", "TRACE"]

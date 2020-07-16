@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  drawbridge:
+    build: .
+    image: jakewright/drawbridge
+    volumes:
+      - ./config.sample.yaml:/config/config.yaml
+    ports:
+      - 8080:8080
