@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/jakewright/drawbridge/config"
-	"github.com/jakewright/drawbridge/log"
-	"github.com/jakewright/drawbridge/server"
+	"github.com/konectdigital/drawbridge/config"
+	"github.com/konectdigital/drawbridge/log"
+	"github.com/konectdigital/drawbridge/server"
 )
 
 func main() {

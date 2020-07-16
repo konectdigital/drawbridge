@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/Knetic/govaluate"
-	"github.com/jakewright/drawbridge/log"
-	"github.com/jakewright/drawbridge/plugin"
-	"github.com/jakewright/muxinator"
+	"github.com/konectdigital/drawbridge/log"
+	"github.com/konectdigital/drawbridge/plugin"
+	"github.com/konectdigital/muxinator"
 )
 
 func init() {

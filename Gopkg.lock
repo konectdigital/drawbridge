@@ -25,7 +25,7 @@
 [[projects]]
   branch = "master"
   digest = "1:8384c01750f2d6af615435db2ae7a2d5e5df08617e6244a43fb2ae8f2b316d90"
-  name = "github.com/jakewright/muxinator"
+  name = "github.com/konectdigital/muxinator"
   packages = ["."]
   pruneopts = "UT"
   revision = "fedb92b2632178674791fe93451f72ade912bacb"
@@ -72,7 +72,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/jakewright/muxinator",
+    "github.com/konectdigital/muxinator",
     "gopkg.in/yaml.v2",
     "gotest.tools/assert",
   ]

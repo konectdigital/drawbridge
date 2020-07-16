@@ -2,7 +2,7 @@ FROM golang:latest
 
 RUN go get github.com/golang/dep/cmd/dep
 
-WORKDIR /go/src/github.com/jakewright/drawbridge
+WORKDIR /go/src/github.com/konectdigital/drawbridge
 COPY . .
 
 RUN dep ensure

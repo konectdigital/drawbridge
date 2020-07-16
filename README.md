@@ -1,7 +1,5 @@
 # Drawbridge API Gateway
 
-<img align="right" src="https://media.giphy.com/media/xT5LMTMnW8KpO34mQ0/giphy.gif" width="260 "/>
-
 Drawbridge is a lightweight API gateway written in Go.
 
 - No datastore needed - APIs are defined by a yaml config file.
@@ -12,16 +10,17 @@ Drawbridge acts as a reverse proxy for one or more APIs.
 The APIs can be configured in a yaml file called `config.yaml`.
 
 Each API definition must have the following properties:
- - `name`- a friendly name for the API
- - `prefix` - the path prefix
- - `upstream_url` - the target URL to proxy to
+
+- `name`- a friendly name for the API
+- `prefix` - the path prefix
+- `upstream_url` - the target URL to proxy to
 
 ```yaml
 apis:
   reqres:
-      name: "JSONPlaceholder"
-      prefix: "typicode"
-      upstream_url: "http://jsonplaceholder.typicode.com"
+    name: "JSONPlaceholder"
+    prefix: "typicode"
+    upstream_url: "http://jsonplaceholder.typicode.com"
 ```
 
 If the drawbridge server was running at localhost:5000, http://localhost:5000/typicode/posts would proxy to http://jsonplaceholder.typicode.com/posts.
@@ -55,6 +54,7 @@ $ Ctrl+c
 $ make build start
 $ Ctrl+c
 ```
+
 Where `Ctrl+c` stops the running Docker container.
 
 ### Installing new packages

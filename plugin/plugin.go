@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/jakewright/muxinator"
+	"github.com/konectdigital/muxinator"
 	"github.com/mitchellh/mapstructure"
 )
 

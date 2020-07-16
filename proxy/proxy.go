@@ -5,7 +5,7 @@ import (
 	"net/http/httputil"
 	"net/url"
 
-	"github.com/jakewright/drawbridge/utils"
+	"github.com/konectdigital/drawbridge/utils"
 )
 
 // Proxy is a handler that takes an incoming request and sends it

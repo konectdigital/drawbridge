@@ -1,9 +1,9 @@
-version: '3'
+version: "3"
 
 services:
   drawbridge:
     build: .
-    image: jakewright/drawbridge
+    image: konectdigital/drawbridge
     volumes:
       - ./config.sample.yaml:/config/config.yaml
     ports:

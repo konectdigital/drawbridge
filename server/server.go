@@ -5,16 +5,16 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/jakewright/drawbridge/config"
-	"github.com/jakewright/drawbridge/log"
-	"github.com/jakewright/drawbridge/plugin"
-	"github.com/jakewright/drawbridge/proxy"
-	"github.com/jakewright/drawbridge/utils"
-	"github.com/jakewright/muxinator"
+	"github.com/konectdigital/drawbridge/config"
+	"github.com/konectdigital/drawbridge/log"
+	"github.com/konectdigital/drawbridge/plugin"
+	"github.com/konectdigital/drawbridge/proxy"
+	"github.com/konectdigital/drawbridge/utils"
+	"github.com/konectdigital/muxinator"
 
 	// Need to import all plugins to call their init functions
-	_ "github.com/jakewright/drawbridge/plugin/log"
-	_ "github.com/jakewright/drawbridge/plugin/retry"
+	_ "github.com/konectdigital/drawbridge/plugin/log"
+	_ "github.com/konectdigital/drawbridge/plugin/retry"
 )
 
 func ListenAndServe(configuration *config.Configuration) error {
